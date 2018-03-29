@@ -1,12 +1,12 @@
 from django.db import models
 
 # Create your models here.
-from django.cotrib.auth.models import AbstracUser,UserManager 
+from django.contrib.auth.models import AbstractUser,UserManager 
 
 class CustomUserManager(UserManager):
 	pass
 
-class CustomUser(AbstrsctUser):
+class CustomUser(AbstractUser):
 	objects = CustomUserManager()
 		
 
